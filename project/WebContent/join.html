@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>회원가입</title>
+<title>회원가입창</title>
  
 <link href="board2.css" rel="stylesheet" type="text/css" />
 
@@ -10,7 +10,7 @@
 @charset "utf-8";
 /* CSS Document */
  
-/*공통*/
+/*공통*/   
  
 body{font-size:12px;}
  
@@ -18,11 +18,11 @@ body{font-size:12px;}
 table, th, td {border:1px solid #333333; border-collapse:collapse; padding:5px}
  
 /*서브타이틀*/
-.signSubTitle {color:#000; background-color:#FFD9FA ; text-align:center; font-weight:700; font-size:12px}
+.signSubTitle {color:#96C; background-color:#FC9 ; text-align:center; font-weight:700; font-size:12px}
  
 /*헤드부 */
 caption{font-size:18px; font-weight:bold; text-decoration:underline; padding:20px;}
-thead, th{ background-color:#FFD9FA ;}
+thead, th{ background-color:#FC6 ;}
  
 /*바디부*/
 .toNo, .tdDate , .tdCount {text-align:center;}
@@ -70,7 +70,6 @@ tbody a:active { font-size:13px; font-family:궁서;}
  }
  tfoot a:hover{ text-decoration:underline;}
  tfoot a:active { font-size:13px; font-family:궁서;}
- form{position: absolute; left: 50px;}
 </style>
 
 </head>
@@ -88,9 +87,12 @@ tbody a:active { font-size:13px; font-family:궁서;}
             <col width="500" />
         </colgroup>
     </thead>
-
+   
+   
+   
     <!-- 바디부 -->
-    <tbody>          
+    <tbody>
+           
         <tr>    
             <td colspan="2" class="signSubTitle">
                 필수입력사항
@@ -111,7 +113,8 @@ tbody a:active { font-size:13px; font-family:궁서;}
                 - <input type="password" name="inJumin2" class="inBorder" />
                 <div>※ 256 bit 암호화 값으로 저장 됩니다.^_^</div>
              </td>
-        </tr>      
+        </tr>
+       
         <!-- 아이디 -->
         <tr>
             <th>아이디</th>
@@ -201,7 +204,8 @@ tbody a:active { font-size:13px; font-family:궁서;}
                     <option value="daum.net">daum.net
                     <option value="naver.com">naver.com
                     <option value="nate.com">nate.com                              
-                </select>           
+                </select>
+               
              </td>
         </tr>
            <!-- 이메일 수신여부-->
@@ -211,7 +215,8 @@ tbody a:active { font-size:13px; font-family:궁서;}
                   <input type="radio" name="emailSend" /> 예
                   <input type="radio" name="emailSend" /> 아니오              
             </td>
-        </tr>  
+        </tr>
+       
         <!-- 우편번호-->
         <tr>
             <th>우편번호</th>
@@ -243,7 +248,8 @@ tbody a:active { font-size:13px; font-family:궁서;}
                 <input type="text" size="5" name="inPhone2" class="inBorder"/>-
                 <input type="text" size="5" name="inPhone3" class="inBorder"/>
              </td>
-        </tr> 
+        </tr>
+       
         <!-- 휴대전화번호 -->
         <tr>
             <th>핸드폰번호</th>
@@ -259,6 +265,7 @@ tbody a:active { font-size:13px; font-family:궁서;}
                 <input type="text" size="5" name="inHphone3" class="inBorder" />
              </td>
         </tr>
+   
         <!-- 선택입력사항 타이틀 -->
         <tr>
             <td colspan="2" class="signSubTitle">
@@ -274,8 +281,10 @@ tbody a:active { font-size:13px; font-family:궁서;}
                     <option value="포탈사이트검색">포탈사이트검색
                     <option value="블로그">블로그
                     <option value="주위소개">주위소개                  
-                    <option value="etc">기타       
+                    <option value="etc">기타
+                   
                 </select>
+               
              </td>
         </tr>
         <!-- 결혼여부 -->
