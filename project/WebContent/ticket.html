@@ -10,15 +10,18 @@
     <link href="./bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
  <style>
  
- h2 { margin: 20px; color:blue; }
- div.container{ width:600px; }
-
+	body{background-color:#FFEBFF;}
+	img{border:none; vertical-align:top;}
+	header{height:100px;background-color:none;margin: 30px;padding: 28px;}
+	.btn-default{color:black; font-size:23px;}
+	section{background-color:green; width:600px;margin: 20px;padding: 28px;}
  
  </style>
 </head>
 <body>
 
    <!-- 코딩 시작 -->
+   <header>
 <div id='1' class="btn-group" role="group" aria-label="...">
   <div class="btn-group" role="group">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -26,9 +29,9 @@
       <span class="caret"></span>   
     </button>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="http://www.naver.com">A</a></li>
-      <li><a href="http://www.daum.net">B</a></li>
-      <li><a href="http://www.youtube.com">C</a></li>
+      <li><a href="./Sea.html" style='color:black;font-size:19px;'><strong>S</strong>ea</a></li>
+      <li><a href="./Eugene.html" style='color:black;font-size:19px;'><strong>E</strong>ugene</a></li>
+      <li><a href="./Shoo.html" style='color:black;font-size:19px;'><strong>S</strong>hoo</a></li>
     </ul>
         
   </div>
@@ -39,10 +42,10 @@
   <button type="button" class="btn btn-default" onclick="window.location.href='./chart.html'">음원 순위</button>
 
 <!-- 회원가입 -->
- <a href="./join.html" target='_blank'><input type="submit" value ='회원가입'></a>
+ <a href="./join.html" target='_blank'><input type="submit" class="btn btn-default" value ='회원가입'></a>
  <!-- 로그인 -->
- <a href="./login2.html" target='_blank'><input type="submit" value ='로그인'></a>
-
+ <a href="./login.html" target='_blank'><input type="submit" class="btn btn-default" value ='로그인'></a>
+</header>
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
